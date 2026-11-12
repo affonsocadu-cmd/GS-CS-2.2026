@@ -1,5 +1,12 @@
 # Sistema de Triagem - 1a Via da CNH (Logica Booleana)
 
+## Autores
+
+| Nome | RM |
+|---|---|
+| Carlos Eduardo Affonso | 569676 |
+| Igor Massone Monteiro | 573853 |
+
 Trabalho desenvolvido para a disciplina de Arquitetura de Computadores / Sistemas Digitais. O objetivo e simular um atendimento basico de triagem usando logica booleana, aplicando tabela-verdade, simplificacao algebrica, mapa de Karnaugh, circuitos logicos e um script em Python para validar tudo.
 
 ## Cenario e Regras
@@ -37,7 +44,7 @@ O agendamento so e liberado (`S = 1`) se o candidato for maior de idade (`A = 1`
 
 ## 2. Expressao Canonica e Simplificacao
 
-*(Obs: usando apóstrofo `'` para representar a negacao/NOT)*
+*(Obs: usando apóstrofo `'` para representar a negaçõo/NOT)*
 
 ### Soma de Mintermos (Forma Canonica)
 Pegando as linhas onde `S = 1` (linhas 5, 6 e 7):
