@@ -122,9 +122,9 @@ Precisa ter o Python 3 instalado:
 ```bash
 python triagem.py
 ```
-## Evidencias e Simulacoes
+## Evidências e Simulações
 
-Abaixo estao os registros da tabela-verdade, da simplificacao via Mapa de Karnaugh, dos circuitos montados no CircuitVerse e da execucao do codigo em Python:
+Abaixo estão os registros da tabela-verdade, da simplificação via Mapa de Karnaugh, dos circuitos montados no CircuitVerse e da execução do código em Python:
 
 ### 1. Tabela-Verdade
 ![Tabela Verdade](prints/tabela_verdade.png)
@@ -132,17 +132,17 @@ Abaixo estao os registros da tabela-verdade, da simplificacao via Mapa de Karnau
 ### 2. Mapa de Karnaugh
 ![Mapa de Karnaugh](prints/mapa_karnaugh.png)
 
-### 3. Circuito Logico Original (6 portas)
+### 3. Circuito Lógico Original (6 portas)
 ![Circuito Original](prints/circuito_original.png)
 
-### 4. Circuito Logico Simplificado (2 portas)
+### 4. Circuito Lógico Simplificado (2 portas)
 ![Circuito Simplificado](prints/circuito_simplificado.png)
 
-### 5. Execucao e Validacao no Terminal
+### 5. Execução e Validação no Terminal
 ![Execucao do Codigo](prints/execucao_codigo.png)
 
 
 ## Ferramentas usadas no trabalho
-* **32x8.com** e **dCode** para conferir o mapa de Karnaugh e as simplificacoes.
-* **CircuitVerse** para desenhar e testar as portas logicas.
-* **Python 3** para a implementacao final.
+* **32x8.com** e **dCode** para conferir o mapa de Karnaugh e as simplificações.
+* **CircuitVerse** para desenhar e testar as portas lógicas.
+* **Python 3** para a implementação final.
