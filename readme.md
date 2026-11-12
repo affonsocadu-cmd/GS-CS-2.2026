@@ -1,13 +1,13 @@
 # Sistema de Triagem - 1a Via da CNH (Logica Booleana)
 
+Trabalho desenvolvido para a disciplina de Arquitetura de Computadores / Sistemas Digitais. O objetivo e simular um atendimento basico de triagem usando logica booleana, aplicando tabela-verdade, simplificacao algebrica, mapa de Karnaugh, circuitos logicos e um script em Python para validar tudo.
+
 ## Autores
 
 | Nome | RM |
 |---|---|
 | Carlos Eduardo Affonso | 569676 |
 | Igor Massone Monteiro | 573853 |
-
-Trabalho desenvolvido para a disciplina de Arquitetura de Computadores / Sistemas Digitais. O objetivo e simular um atendimento basico de triagem usando logica booleana, aplicando tabela-verdade, simplificacao algebrica, mapa de Karnaugh, circuitos logicos e um script em Python para validar tudo.
 
 ## Cenario e Regras
 
