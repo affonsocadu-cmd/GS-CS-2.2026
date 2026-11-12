@@ -1,6 +1,6 @@
 # Sistema de Triagem - 1a Via da CNH (Logica Booleana)
 
-Trabalho desenvolvido para a disciplina de Arquitetura de Computadores / Sistemas Digitais. O objetivo e simular um atendimento basico de triagem usando logica booleana, aplicando tabela-verdade, simplificacao algebrica, mapa de Karnaugh, circuitos logicos e um script em Python para validar tudo.
+Trabalho desenvolvido para a disciplina de Arquitetura de Computadores / Sistemas Digitais. O objetivo é simular um atendimento básico de triagem usando lógica booleana, aplicando a tabela-verdade, simplificação algébrica, mapa de Karnaugh, circuitos lógicos e um script em Python para validação.
 
 ## Autores
 
@@ -9,21 +9,21 @@ Trabalho desenvolvido para a disciplina de Arquitetura de Computadores / Sistema
 | Carlos Eduardo Affonso | 569676 |
 | Igor Massone Monteiro | 573853 |
 
-## Cenario e Regras
+## Cenário e Regras
 
-A situacao escolhida foi a triagem inicial para tirar a **1a Via da CNH**. Definimos 3 variaveis de entrada e 1 de saida:
+A situação escolhida foi a triagem inicial para tirar a **1a Via da CNH**. Definimos 3 variáveis de entrada e 1 de saída:
 
 **Entradas:**
 * **A (Maioridade):** `1` = 18 anos ou mais | `0` = Menor de 18 anos
-* **B (Alfabetizacao):** `1` = Sabe ler e escrever | `0` = Nao sabe ler e escrever
+* **B (Alfabetizacao):** `1` = Sabe ler e escrever | `0` = Não sabe ler e escrever
 * **C (Documentos - RG e CPF):** `1` = Tem os dois | `0` = Falta algum documento
 
 **Saida (S):**
 * `S = 1` -> Agendamento liberado para abertura de processo e exames.
-* `S = 0` -> Atendimento bloqueado (nao atende aos requisitos minimos).
+* `S = 0` -> Atendimento bloqueado (nao atende aos requisítos minimos).
 
 **Regra definida pelo grupo:**
-O agendamento so e liberado (`S = 1`) se o candidato for maior de idade (`A = 1`) **E** atender a pelo menos uma dessas condicoes: saber ler e escrever (`B = 1`, podendo usar documento digital caso esteja sem o fisico) **OU** estar com os documentos fisicos em maos (`C = 1`, para atendimento assistido).
+O agendamento só é liberado (`S = 1`) se o candidato for maior de idade (`A = 1`) **E** atender a pelo menos uma dessas condicoes: saber ler e escrever (`B = 1`, podendo usar documento digital caso esteja sem o fisico) **OU** estar com os documentos fisicos em mãos (`C = 1`, para atendimento assistido).
 
 ---
 
@@ -42,18 +42,18 @@ O agendamento so e liberado (`S = 1`) se o candidato for maior de idade (`A = 1`
 
 ---
 
-## 2. Expressao Canonica e Simplificacao
+## 2. Expressão Canônica e Simplificação
 
 *(Obs: usando apóstrofo `'` para representar a negaçõo/NOT)*
 
-### Soma de Mintermos (Forma Canonica)
+### Soma de Mintermos (Forma Canônica)
 Pegando as linhas onde `S = 1` (linhas 5, 6 e 7):
 
 ```text
 S = (A . B' . C) + (A . B . C') + (A . B . C)
 ```
 
-### Simplificacao por Algebra Booleana
+### Simplificação por Álgebra Booleana
 
 ```text
 S = A.B'.C + A.B.C' + A.B.C
@@ -64,7 +64,7 @@ S = A . (B'.C + B)                 -> Elemento neutro (B . 1 = B)
 S = A . (B + C)                    -> Absorcao (X + X'.Y = X + Y)
 ```
 
-**Equivalencia com De Morgan:**
+**Equivalência com De Morgan:**
 ```text
 S = ( (A . (B + C))' )'
 S = ( A' + (B + C)' )'
@@ -93,7 +93,7 @@ S = A.C + A.B  =>  S = A . (B + C)
 
 ---
 
-## 3. Comparacao dos Circuitos
+## 3. Comparação dos Circuitos
 
 Os circuitos foram montados e testados no **CircuitVerse** / **Logic.ly** (imagens na pasta `/circuitos`).
 
@@ -107,13 +107,13 @@ Os circuitos foram montados e testados no **CircuitVerse** / **Logic.ly** (image
   * 0 portas NOT
   * 1 porta OR (de 2 entradas)
   * 1 porta AND (de 2 entradas)
-  * **Total:** 2 portas logicas (reducao de 4 portas no circuito)
+  * **Total:** 2 portas lógicas (redução de 4 portas no circuito)
 
 ---
 
-## 4. Codigo e Validacao
+## 4. Código e Validação
 
-O script `triagem.py` pede os valores de `A`, `B` e `C` no terminal (tratando caso o usuario digite algo diferente de `0` ou `1`), mostra o resultado do atendimento e roda um loop testando todas as 8 linhas da tabela-verdade para provar que a expressao original e a simplificada dao exatamente a mesma saida.
+O script `triagem.py` pede os valores de `A`, `B` e `C` no terminal (tratando caso o usuário digite algo diferente de `0` ou `1`), mostra o resultado do atendimento e roda um loop testando todas as 8 linhas da tabela-verdade para provar que a expressão original e a simplificada dão exatamente a mesma saida.
 
 ### Como rodar
 
